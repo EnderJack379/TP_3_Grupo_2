@@ -1,10 +1,10 @@
-// tenemos en arreglo vacio 
+ /**arreglo vaci que se exporta  */
 export const mascotas=[];
 
 
-// los datos de entrada 
+/** datos de entrada en el objeto */ 
 export function registrarMascota(nombre, tipo, edad, duenio, vacunada) {
-// crar los objetos 
+/** crear objeto */
   let mascota = {
     nombre: nombre,
     tipo: tipo,
@@ -13,7 +13,7 @@ export function registrarMascota(nombre, tipo, edad, duenio, vacunada) {
     vacunada: vacunada
   };
 
-// guardamos los odjetos de la arreglo "final de arreglo"
+    /** Almacenamiento en el array mascotas de cada nueva mascota */
   mascotas.push(mascota);
   console.log("mascotas registradas:", mascotas);
 }
