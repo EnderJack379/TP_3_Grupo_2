@@ -12,7 +12,7 @@ function registrarMascota(nombre, tipo, edad, duenio, vacunada) {
     vacunada: vacunada
   };
 
-// gaardamos los odjetos de la arreglo "final de arreglo"
+// guardamos los odjetos de la arreglo "final de arreglo"
   mascotas.push(mascota);
 
   // para verificar usamos consola para que se muestre en el navegador
@@ -20,6 +20,9 @@ function registrarMascota(nombre, tipo, edad, duenio, vacunada) {
   console.log("Lista completa:", mascotas);
 }
 
+
+/*
 // a aqui son 2 eje. es como el registo de mascotas 
 registrarMascota("Luna", "Gato", 3, "Juan Perez", true);
 registrarMascota("Firulais", "Perro", 5, "Ana Gómez", false);
+*/
