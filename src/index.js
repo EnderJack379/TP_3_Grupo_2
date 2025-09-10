@@ -1,25 +1,25 @@
-// tenemos en arreglo vacio 
-let mascotas = [];
+import { registrarMascota, mascotas } from './registro.js';
+import { actualizarTabla } from './tabla.js';
 
-// los datos de entrada 
-function registrarMascota(nombre, tipo, edad, duenio, vacunada) {
-// crar los objetos 
-  let mascota = {
-    nombre: nombre,
-    tipo: tipo,
-    edad: edad,
-    duenio: duenio,
-    vacunada: vacunada
-  };
+console.log("Registro de mascotas iniciado.");
 
-// guardamos los odjetos de la arreglo "final de arreglo"
-  mascotas.push(mascota);
+function manejarSubmit(event) {
+  event.preventDefault();
+  const nombre = document.getElementById("nombre").value;
+  const tipo = document.getElementById("tipo").value;
+  const edad = parseInt(document.getElementById("edad").value);
+  const dueno = document.getElementById("dueno").value;
+  const vacunada = document.querySelector('input[name="vacunada"]:checked').value === "si";
 
-  // para verificar usamos consola para que se muestre en el navegador
-  console.log("Mascota registrada:", mascota);
-  console.log("Lista completa:", mascotas);
+  registrarMascota(nombre, tipo, edad, dueno, vacunada);
+  actualizarTabla(mascotas);
+  event.target.reset();
+  console.log("Mascota registrada correctamente.");
+
 }
 
+
+document.getElementById("formMascota").addEventListener("submit", manejarSubmit);
 
 /*
 // a aqui son 2 eje. es como el registo de mascotas 
