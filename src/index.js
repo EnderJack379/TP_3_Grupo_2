@@ -1,5 +1,6 @@
 import { registrarMascota, mascotas } from './registro.js';
 import { actualizarTabla } from './tabla.js';
+import { mostrarEstadisticas} from './calculos.js';  
 
 console.log("Registro de mascotas iniciado.");
 
@@ -15,14 +16,8 @@ function manejarSubmit(event) {
   actualizarTabla(mascotas);
   event.target.reset();
   console.log("Mascota registrada correctamente.");
-
+  mostrarEstadisticas(mascotas);
 }
-
 
 document.getElementById("formMascota").addEventListener("submit", manejarSubmit);
 
-/*
-// a aqui son 2 eje. es como el registo de mascotas 
-registrarMascota("Luna", "Gato", 3, "Juan Perez", true);
-registrarMascota("Firulais", "Perro", 5, "Ana Gómez", false);
-*/
