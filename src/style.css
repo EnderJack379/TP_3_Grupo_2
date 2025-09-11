@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;     
+  background: #abdf88;
+  font-family: sans-serif;
+  color: #222;
+}
+
+
+form {
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  margin: 10px 3px;
+  width: 100%;
+  max-width: 600px;  
+}
+
+table {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 600px; 
+}
+
+h1 {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 600px; 
+}
+
+h4 {
+  background: #fff;
+  width: 90%;
+  max-width: 420px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.03);
+  margin: 5px 5px;
+}
+
+input{
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+
+label[for="vacunadaSi"],
+label[for="vacunadaNo"] {
+  background: #eee;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid #ccc;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+input,select,button {
+  width: 80%;
+  display: block;
+  margin: 8px auto;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 7px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+
+button {
+  border: none;
+  cursor: pointer;
+  background: #176041;
+  color: #fff;
+  font-weight: 500;
+}
