@@ -103,3 +103,14 @@ button {
   color: #fff;
   font-weight: 500;
 }
+
+/* Estilo para el botón de eliminar */
+.btn-eliminar {
+  background-color: #dc3545; /* Un color rojo para indicar peligro/eliminar */
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
