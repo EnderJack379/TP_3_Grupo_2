@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EnderDesafio de Suma</title>
+
+  <!-- Enlace al CSS externo -->
+  <link rel="stylesheet" href="../src/styles.css">
+</head>
+<body>
+  <div class="app-wrapper">
+    <h1>EnderDesafio de Suma</h1>
+    <p>La suma de los dos primeros números de cada columna es igual al tercero. Encuentra el valor de 'X'.</p>
+
+    <div class="panels-container">
+      <div class="puzzle-panel">
+        <div id="matriz-container" class="matriz">
+          <!-- El contenido de la matriz se genera con JavaScript -->
+        </div>
+
+        <div class="input-area">
+          <label for="respuesta">Valor de 'X':</label>
+          <input type="number" id="respuesta" placeholder="Tu respuesta">
+          <button id="verificar-btn">Verificar</button>
+        </div>
+
+        <p id="resultado"></p>
+      </div>
+
+      <fieldset class="config-area">
+        <legend>Configurar Puzzle</legend>
+        <p>Introduce 3 números separados por comas para cada fila. Usa 'X' para la incógnita.</p>
+        <div class="config-row">
+            <label for="cfg-row1">Fila 1:</label>
+            <input type="text" id="cfg-row1" value="1, 8, 3">
+        </div>
+        <div class="config-row">
+            <label for="cfg-row2">Fila 2:</label>
+            <input type="text" id="cfg-row2" value="2, 3, 4">
+        </div>
+        <div class="config-row">
+            <label for="cfg-row4">Fila 3 (Resultado):</label>
+            <input type="text" id="cfg-row4" value="4, X, 7">
+        </div>
+        <button id="config-btn">Actualizar Puzzle</button>
+      </fieldset>
+    </div>
+  </div>
+
+  <script src="../src/index.js"></script>
+</body>
+</html>
