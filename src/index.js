@@ -1,5 +1,4 @@
-<<<<<<< Updated upstream
-=======
+
 import { registrarMascota, mascotas } from './registro.js'; /** imports de funciones de registro */ 
 import { actualizarTabla } from './tabla.js'; /** imports de funciones de actualizar tabla*/
 import { mostrarEstadisticas} from './calculos.js';  /** imports de funciones de estadisticas */ 
@@ -23,4 +22,3 @@ function manejarSubmit(event) { /** Manejador de eventos */
 }
 
 document.getElementById("formMascota").addEventListener("submit", manejarSubmit); /** escucha el evento submit del formulario y llama a la funcion manejarSubmit */
->>>>>>> Stashed changes
